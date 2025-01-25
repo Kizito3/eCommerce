@@ -31,7 +31,7 @@ export const items: itemsProps[] = [
   {
     discount: "-30%",
     images: ["/Heart.png", "/Eye.png"],
-    productImage: "/gamepad.png",
+    productImage: "/camera.png",
     description: "AK-900 Wired Keyboard",
     price: "$960",
     discountedPrice: "$1160",
@@ -39,7 +39,7 @@ export const items: itemsProps[] = [
   {
     discount: "-30%",
     images: ["/Heart.png", "/Eye.png"],
-    productImage: "/gamepad.png",
+    productImage: "/xbox.png",
     description: "IPS LCD Gaming Monitor",
     price: "$370",
     discountedPrice: "$400",
@@ -55,7 +55,7 @@ export const items: itemsProps[] = [
   {
     discount: "-30%",
     images: ["/Heart.png", "/Eye.png"],
-    productImage: "/gamepad.png",
+    productImage: "/xbox.png",
     description: "S-Series Comfort Chair ",
     price: "$375",
     discountedPrice: "$400",

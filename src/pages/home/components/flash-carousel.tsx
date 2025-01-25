@@ -5,13 +5,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Badge } from "./ui/badge";
+import { Badge } from "../../../components/ui/badge";
 import { items } from "@/data/data";
-import * as motion from "motion/react-client";
 
 export default function FlashCarousel() {
   return (
-    <div className="container mt-6">
+    <div className="container mt-6 border border-t-0 border-r-0 border-l-0">
       <Carousel
         opts={{
           loop: true,
@@ -36,31 +35,13 @@ export default function FlashCarousel() {
                 <div className="flex justify-center items-center">
                   <img src={item.productImage} alt="" className="" />
                 </div>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="text-white bg-black rounded-b-sm py-[0.59rem] text-center hidden group-hover:block transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                >
-                  {" "}
-                  <motion.button
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      duration: 0.8,
-                      delay: 0.5,
-                      ease: [0, 0.71, 0.2, 1.01],
-                    }}
-                  >
+                <div className="">
+                  <button className="text-white w-full bg-black rounded-b-sm py-[0.59rem] text-center hidden group-hover:block transition-opacity duration-300 opacity-0 group-hover:opacity-100 animate-slide-in">
                     add to cart
-                  </motion.button>
-                </motion.div>
+                  </button>
+                </div>
               </div>
-              <div className="font-poppins font-semibold">
+              <div className="font-poppins font-semibold mt-5">
                 <p>{item.description}</p>
               </div>
               <div>
@@ -83,6 +64,11 @@ export default function FlashCarousel() {
           </div>
         </div>
       </Carousel>
+      <div className="flex justify-center items-center font-poppins my-12">
+        <button className="bg-[#DB4444] h-10 w-48 text-white rounded-md hover:bg-transparent transition-all delay-100 hover:text-black hover:border-[#DB4444] hover:border capitalize">
+          view all product
+        </button>
+      </div>
     </div>
   );
 }
