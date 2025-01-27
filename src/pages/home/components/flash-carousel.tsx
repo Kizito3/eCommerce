@@ -57,7 +57,7 @@ export default function FlashCarousel() {
         </CarouselContent>
         <div>
           <div className="relative">
-            <div className="absolute -top-80 right-8">
+            <div className="absolute -top-[22rem] right-8">
               <CarouselPrevious />
               <CarouselNext />
             </div>

@@ -2,6 +2,9 @@ import Items from "@/components/shared/items";
 import Hero from "./components/hero";
 import FlashCarousel from "@/pages/home/components/flash-carousel";
 import CountDown from "./components/count-down";
+import Categories from "./components/categories";
+import BestSelling from "./components/best-selling";
+import SpeakerCategory from "./components/speaker-category";
 
 export default function Home() {
   return (
@@ -17,6 +20,13 @@ export default function Home() {
         </div>
       </div>
       <FlashCarousel />
+      <div className="mt-20">
+        <Categories />
+      </div>
+      <div className="mt-20 font-poppins">
+        <BestSelling />
+      </div>
+      <SpeakerCategory />
     </>
   );
 }
